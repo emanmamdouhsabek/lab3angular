@@ -1,0 +1,16 @@
+
+<div class="container my-3">
+    
+    <div class="form-group">
+      <label >search book name</label>
+      <br>
+      <input type="text" id="searchinput">
+      <br>
+      <button type="button" class="btn btn-primary my-3" (click)="handlesearch()">
+          search</button>
+    </div>
+      <ul >
+          <li *ngFor="let item of data">{{item.volumeInfo.title}}</li>
+      </ul>
+   
+  </div>
